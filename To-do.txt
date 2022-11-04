@@ -1,0 +1,44 @@
+I have to make :  single.html 
+			Group.html
+			change spelling events.html to gallery.html
+
+
+
+shuttle
+boxing 
+taekwondo
+judo
+tennis
+wrestling 
+table tennis
+
+
+in settings.py change to psql database
+
+
+
+
+
+djangoproject.com
+To install virtual environment : pip install virtualenvwrapper-win
+To install django : pip install django
+To create a project in django : django-admin startproject sportsproject
+To create an app on that project : python manage.py startapp sportsapp
+To run server : python manage.py runserver(rocket)
+
+To make something a virtual environment : mkvirtual demo
+(In pycharm)To enter the virtual environment : workon demo
+(In pycharm)To make an app : python manage.py startapp demoapp
+
+
+MVT architecture(Model View Template)
+To migrate to urls in sportsapp : path('',include('travelapp.urls'))
+To migrate to views in sportsapp : path('',views.demo,name='demo')
+
+Providing templates
+Creating template : travelproject -> create folder templates -> create index.py
+setting path for templates : settings.py --> templates --> 'DIRS':[os.path.join(BASE_DIR,'templates')],
+(urls.py) --> path('',views.index,name='index')
+(views.py) --> def index(request):
+			 return render(request,"index.html")
+
